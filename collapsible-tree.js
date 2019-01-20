@@ -95,7 +95,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
       .clone(true).lower()
         .attr("stroke-linejoin", "round")
         .attr("stroke-width", 3)
-        .attr("stroke", "white");
+        .attr("stroke", d => d.data.color);
 
     // Transition nodes to their new position.
     const nodeUpdate = node.merge(nodeEnter).transition(transition)
@@ -162,7 +162,7 @@ d3.tree().nodeSize([dx, dy])
     {
       name: "data",
       inputs: ["require"],
-      value: {'name': 'Hugo Dyonizy Steinhaus',
+      value: {'name': 'Hugo Dyonizy Steinhaus', color: 'red' ,
  'children': [{'name': 'Agnieszka  Plucińska',
    'children': [{'name': 'Jacek  Wesolowski',
      'children': [{'name': 'Konstancja  Bobecka'},

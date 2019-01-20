@@ -45,6 +45,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
 
   const gNode = svg.append("g")
       .attr("cursor", "pointer");
+      
 
   function update(source) {
     const duration = d3.event && d3.event.altKey ? 2500 : 250;

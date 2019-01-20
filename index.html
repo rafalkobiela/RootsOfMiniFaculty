@@ -28,6 +28,22 @@
     window.loadTree1 = loadTree1
     window.loadTree2 = loadTree2
     window.loadTree3 = loadTree3
+
+    function removeDivs() {
+        document.getElementById("tree").children[0].innerHTML = ""
+        document.getElementById("tree").children[2].innerHTML = ""
+        document.getElementById("tree").children[3].innerHTML = ""
+        document.getElementById("tree").children[4].innerHTML = ""
+        document.getElementById("tree").children[5].innerHTML = ""
+        document.getElementById("tree").children[6].innerHTML = ""
+        document.getElementById("tree").children[7].innerHTML = ""
+        document.getElementById("tree").children[8].innerHTML = ""
+    }
+
+    $('#tree').bind('DOMSubtreeModified', function() {
+        removeDivs()
+    });
+
 </script>
 
 <script
@@ -41,7 +57,7 @@
 
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Action
+        Zmień drzewo
     </button>
     <div class="dropdown-menu">
         <a class="dropdown-item" href="#" onclick="loadTree1()">Deafult</a>

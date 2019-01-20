@@ -30,7 +30,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
     if (d.depth && d.data.name.length !== 7) d.children = null;
   });
 
-  
+
   const svg = d3.create("svg")
       .attr("width", width)
       .attr("height", dx)
@@ -165,7 +165,7 @@ d3.tree().nodeSize([dx, dy])
       inputs: ["require"],
       value: {'name': 'Hugo Dyonizy Steinhaus', color: 'red' ,
  'children': [{'name': 'Agnieszka  Plucińska',
-   'children': [{'name': 'Jacek  Wesolowski',
+   'children': [{'name': 'Jacek  Wesolowski', color: 'blue' ,
      'children': [{'name': 'Konstancja  Bobecka'},
       {'name': 'Joanna  Chachulska'},
       {'name': 'Anna  Dembinska'},

@@ -93,10 +93,10 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
         .attr("x", d => d._children ? -6 : 6)
         .attr("text-anchor", d => d._children ? "end" : "start")
         .text(d => d.data.name)
+        .style('fill',  d => d.data.color)
       .clone(true).lower()
         .attr("stroke-linejoin", "round")
-        .attr("stroke-width", 3)
-        .attr("stroke", d => d.data.color);
+        .attr("stroke-width", 3);
 
     // Transition nodes to their new position.
     const nodeUpdate = node.merge(nodeEnter).transition(transition)

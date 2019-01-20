@@ -30,6 +30,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
     if (d.depth && d.data.name.length !== 7) d.children = null;
   });
 
+  
   const svg = d3.create("svg")
       .attr("width", width)
       .attr("height", dx)

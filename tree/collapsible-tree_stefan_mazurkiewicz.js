@@ -35,7 +35,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
       .attr("width", width)
       .attr("height", dx)
       .attr("viewBox", [-margin.left, -margin.top, width, dx])
-      .style("font", "10px sans-serif")
+      .style("font", "15px sans-serif")
       .style("user-select", "none");
 
   const gLink = svg.append("g")
@@ -201,14 +201,14 @@ d3.tree().nodeSize([dx, dy])
     {
       name: "dx",
       value: (function(){return(
-10
+40
 )})
     },
     {
       name: "dy",
       inputs: ["width"],
       value: (function(width){return(
-width / 6
+width / 12
 )})
     },
     {

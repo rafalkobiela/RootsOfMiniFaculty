@@ -215,7 +215,7 @@ d3.tree().nodeSize([dx, dy])
       name: "dy",
       inputs: ["width"],
       value: (function(width){return(
-width / 12
+width / 6
 )})
     },
     {

@@ -42,10 +42,38 @@
       #scopeContainer {
         z-index: 120;
       }
+
+      .vertical-menu {
+      width: 200px;
+    }
+    
+    .vertical-menu a {
+      background-color: #eee;
+      color: black;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+    
+    .vertical-menu a:hover {
+      background-color: #ccc;
+    }
+    
+    .vertical-menu a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
     </style>
   </head>
 
   <body>
+    <div class="vertical-menu">
+      <a href="../index.html">Home</a>
+      <a href="index.html" class="active">Mapa powiazan</a>
+      <a href="../tree/index.html">Rozwijane drzewo</a>
+      <a href="#">Link do Bogdana</a>
+    </div>
 
     <div id="mainViewContainer">
       <embed id="mainView" type="image/svg+xml" src="graph.svg"/>

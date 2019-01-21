@@ -8,14 +8,13 @@
 
 <script type="module">
     import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1?module";
-    import notebook1 from "./collapsible-tree.js";
     import notebook2 from "./collapsible-tree_hugo_steinhaus.js";
     import notebook3 from "./collapsible-tree_stefan_banach.js";
+    import notebook4 from "./collapsible-tree_adnrzej_mostowski.js";
+    import notebook5 from "./collapsible-tree_Wladysław_Orlicz.js";
+    import notebook6 from "./collapsible-tree_stanislaw_zaremba.js";
+    import notebook7 from "./collapsible-tree_stefan_mazurkiewicz.js";
 
-    export function loadTree1(){
-        document.getElementById("tree").innerHTML = ""
-        Runtime.load(notebook1, Inspector.into(document.getElementById("tree")));
-    }
     export function loadTree2(){
         document.getElementById("tree").innerHTML = ""
         Runtime.load(notebook2, Inspector.into(document.getElementById("tree")));
@@ -24,10 +23,30 @@
         document.getElementById("tree").innerHTML = ""
         Runtime.load(notebook3, Inspector.into(document.getElementById("tree")));
     }
+    export function loadTree4(){
+        document.getElementById("tree").innerHTML = ""
+        Runtime.load(notebook4, Inspector.into(document.getElementById("tree")));
+    }
+    export function loadTree5(){
+        document.getElementById("tree").innerHTML = ""
+        Runtime.load(notebook5, Inspector.into(document.getElementById("tree")));
+    }
+    export function loadTree6(){
+        document.getElementById("tree").innerHTML = ""
+        Runtime.load(notebook6, Inspector.into(document.getElementById("tree")));
+    }
+    export function loadTree7(){
+        document.getElementById("tree").innerHTML = ""
+        Runtime.load(notebook7, Inspector.into(document.getElementById("tree")));
+    }
 
-    window.loadTree1 = loadTree1
+    
     window.loadTree2 = loadTree2
     window.loadTree3 = loadTree3
+    window.loadTree4 = loadTree4
+    window.loadTree5 = loadTree5
+    window.loadTree6 = loadTree6
+    window.loadTree7 = loadTree7
 
     function removeDivs() {
         document.getElementById("tree").children[0].innerHTML = ""
@@ -58,12 +77,17 @@
 
 <div class="btn-group">
     <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Zmień drzewo
+        Zmień korzeń drzewa
     </button>
     <div class="dropdown-menu">
-        <a class="dropdown-item" href="#" onclick="loadTree1()">Deafult</a>
-        <a class="dropdown-item" href="#" onclick="loadTree2()">Hugo</a>
-        <a class="dropdown-item" href="#" onclick="loadTree3()">Stefan</a>
+        <a class="dropdown-item" href="#" onclick="loadTree2()">Hugo Steinhaus</a> <br>
+        <a class="dropdown-item" href="#" onclick="loadTree3()">Stefan Banach</a> <br>
+        <a class="dropdown-item" href="#" onclick="loadTree4()">Andrzej Mostowski</a> <br>
+        <a class="dropdown-item" href="#" onclick="loadTree5()">Władysław Roman Orlicz</a> <br>
+        <a class="dropdown-item" href="#" onclick="loadTree6()">Stanislaw  Zaremba</a> <br>
+        <a class="dropdown-item" href="#" onclick="loadTree7()">Stefan  Mazurkiewicz</a> <br>
+
+        
     </div>
 
 </div>

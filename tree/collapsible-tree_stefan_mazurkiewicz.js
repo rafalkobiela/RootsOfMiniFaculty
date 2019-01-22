@@ -189,7 +189,7 @@ d3.tree().nodeSize([dx, dy])
       {'name': 'Shaban A. Traina'},
       {'name': 'Elżbieta  Zając'},
       {'name': 'Anna  Zamojska-Dzienio'}],
-     'name': 'Anna B. Romanowska', color : 'red'},
+     'name': 'Anna B. Romanowska'},
     {'name': 'Miroslaw  Truszczynski'}],
    'name': 'Tadeusz  Traczyk'}],
  'name': 'Roman  Sikorski'}],

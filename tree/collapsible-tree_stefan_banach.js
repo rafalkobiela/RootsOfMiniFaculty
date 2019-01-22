@@ -191,7 +191,7 @@ d3.tree().nodeSize([dx, dy])
              {'name': 'Wiesław  Pusz'},
              {'name': 'Piotr Mikołaj Sołtan'},
              {'name': 'Igor  Szczyrba'}]}]},
-         {'name': 'Bogdan  Mi^Ü'},
+         {'name': 'Bogdan  Miłosz'},
          {'name': 'Aleksander  Pełczyński',
           'children': [{'name': 'Nicole  Tomczak-Jaegermann'},
            {'name': 'Przemysław  Wojtaszczyk',

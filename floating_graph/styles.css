@@ -1,13 +1,11 @@
 .vertical-menu {
-		width: 2000px;
-		height: 35px;
-		margin-top: 15px;
+    width: 200px;
   }
   
   .vertical-menu a {
     background-color: #eee;
     color: black;
-		display: inline;
+    display: block;
     padding: 12px;
     text-decoration: none;
   }
@@ -45,7 +43,7 @@
 }
 
 body {
-	font-family: monospace;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #e17055;
@@ -62,8 +60,4 @@ body {
 	color: #fff;
 	background-color: #e17055;
 	border-color: #e17055;
-}
-
-element {
-	font: 15px monospace;
 }

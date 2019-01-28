@@ -94,6 +94,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
         .attr("text-anchor", d => d._children ? "end" : "start")
         .text(d => d.data.name)
         .style('fill',  d => d.data.color)
+        .style('fill',  d => d.data.color)
       .clone(true).lower()
         .attr("stroke-linejoin", "round")
         .attr("stroke-width", 3)
@@ -166,36 +167,36 @@ d3.tree().nodeSize([dx, dy])
       inputs: ["require"],
       value: 
       
-      {'children': [{'children': [{'children': [{'children': [{'children': [{'children': [{'name': 'Agnieszka  Badeńska'},
-      {'name': 'Piotr  Gałązka'}],
-     'name': 'Janina  Kotus'}],
-   'name': 'Karol  Krzyżewski'},
-  {'children': [{'children': [{'name': 'Muktar Eltaher Elzobi'},
-      {'name': 'Pawel  Naroski'},
-      {'name': 'Krzysztof  Parol'},
-      {'name': 'Monika  Pszczola'},
-      {'name': 'Michal  Tuczynski'}],
-     'name': 'Zbigniew  Lonc'},
-    {'name': 'Maciej Jan Maczynski'},
-    {'children': [{'name': 'T.  Brengos'},
-      {'name': 'Bartosz M. Jabłoński'},
-      {'name': 'K.  Matczak'},
-      {'name': 'A.  Mucka'},
-      {'name': 'Agata  Pilitowska'},
-      {'name': 'Krzysztof J. Pszczoła'},
-      {'name': 'Barbara  Roszkowska-Lech'},
-      {'name': 'P.  Slusarski'},
-      {'name': 'Michał Marek Stronkowski'},
-      {'name': 'Shaban A. Traina'},
-      {'name': 'Elżbieta  Zając'},
-      {'name': 'Anna  Zamojska-Dzienio'}],
-     'name': 'Anna B. Romanowska'},
-    {'name': 'Miroslaw  Truszczynski'}],
+      {'children': [{'children': [{'children': [{'children': [{'children': [{'children': [{'name': 'Agnieszka  Badeńska', color: '#a29bfe'},
+      {'name': 'Piotr  Gałązka', color: '#a29bfe'}],
+     'name': 'Janina  Kotus', color: '#a29bfe'}],
+   'name': 'Karol  Krzyżewski', color: '#a29bfe'},
+  {'children': [{'children': [{'name': 'Muktar Eltaher Elzobi', color: '#a29bfe'},
+      {'name': 'Pawel  Naroski', color: '#a29bfe'},
+      {'name': 'Krzysztof  Parol', color: '#a29bfe'},
+      {'name': 'Monika  Pszczola', color: '#a29bfe'},
+      {'name': 'Michal  Tuczynski', color: '#a29bfe'}],
+     'name': 'Zbigniew  Lonc', color: '#a29bfe'},
+    {'name': 'Maciej Jan Maczynski', color: '#a29bfe'},
+    {'children': [{'name': 'T.  Brengos', color: '#a29bfe'},
+      {'name': 'Bartosz M. Jabłoński', color: '#a29bfe'},
+      {'name': 'K.  Matczak', color: '#a29bfe'},
+      {'name': 'A.  Mucka', color: '#a29bfe'},
+      {'name': 'Agata  Pilitowska', color: '#a29bfe'},
+      {'name': 'Krzysztof J. Pszczoła', color: '#a29bfe'},
+      {'name': 'Barbara  Roszkowska-Lech', color: '#a29bfe'},
+      {'name': 'P.  Slusarski', color: '#a29bfe'},
+      {'name': 'Michał Marek Stronkowski', color: '#a29bfe'},
+      {'name': 'Shaban A. Traina', color: '#a29bfe'},
+      {'name': 'Elżbieta  Zając', color: '#a29bfe'},
+      {'name': 'Anna  Zamojska-Dzienio', color: '#a29bfe'}],
+     'name': 'Anna B. Romanowska', color: '#a29bfe'},
+    {'name': 'Miroslaw  Truszczynski', color: '#a29bfe'}],
    'name': 'Tadeusz  Traczyk'}],
- 'name': 'Roman  Sikorski'}],
-'name': 'Andrzej  Mostowski'}],
-'name': 'Kazimierz  Kuratowski'}],
-'name': 'Stefan  Mazurkiewicz'}
+ 'name': 'Roman  Sikorski', color: '#81ecec'}],
+'name': 'Andrzej  Mostowski', color: '#81ecec'}],
+'name': 'Kazimierz  Kuratowski', color: '#81ecec'}],
+'name': 'Stefan  Mazurkiewicz', color: '#74b9ff'}
 
     },
     {

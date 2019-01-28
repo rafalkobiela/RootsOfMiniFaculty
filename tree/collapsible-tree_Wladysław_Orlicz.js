@@ -93,6 +93,7 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
         .attr("x", d => d._children ? -6 : 6)
         .attr("text-anchor", d => d._children ? "end" : "start")
         .text(d => d.data.name)
+        .style('fill',  d => d.data.color)        
       .clone(true).lower()
         .attr("stroke-linejoin", "round")
         .attr("stroke-width", 3)
@@ -165,16 +166,16 @@ d3.tree().nodeSize([dx, dy])
       inputs: ["require"],
       value: 
       
-      {'children': [{'name': 'Andrzej  Alexiewicz'},
-      {'children': [{'children': [{'name': 'Włodzimierz  Bryc'},
-          {'name': 'Wlodzimierz Henryk Smolenski'},
-          {'name': 'Osekowski  Adam'}],
+      {'children': [{'name': 'Andrzej  Alexiewicz', color: '#74b9ff'},
+      {'children': [{'children': [{'name': 'Włodzimierz  Bryc', color: '#a29bfe'},
+          {'name': 'Wlodzimierz Henryk Smolenski', color: '#a29bfe'},
+          {'name': 'Osekowski  Adam', color: '#81ecec'}],
          'name': 'Stanisław  Kwapień'},
-        {'children': [{'children': [{'name': 'Ewa  Drabik'}],
+        {'children': [{'children': [{'name': 'Ewa  Drabik', color: '#a29bfe'}],
            'name': 'Lukasz  Stettner'}],
          'name': 'Jerzy  Zabczyk'}],
        'name': 'Zbigniew  Ciesielski'}],
-     'name': 'Władysław Roman Orlicz'}
+     'name': 'Władysław Roman Orlicz', color: '#74b9ff'}
 
     },
     {

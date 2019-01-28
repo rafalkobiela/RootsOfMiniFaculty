@@ -93,10 +93,11 @@ Click a black node to expand or collapse [the tree](/@mbostock/d3-tidy-tree).`
         .attr("x", d => d._children ? -6 : 6)
         .attr("text-anchor", d => d._children ? "end" : "start")
         .text(d => d.data.name)
+        .style('fill',  d => d.data.color)
       .clone(true).lower()
         .attr("stroke-linejoin", "round")
-        .attr("stroke-width", 3)
-        .attr("stroke", "white");
+        .attr("stroke-width", 3);
+
 
     // Transition nodes to their new position.
     const nodeUpdate = node.merge(nodeEnter).transition(transition)
@@ -163,18 +164,18 @@ d3.tree().nodeSize([dx, dy])
     {
       name: "data",
       inputs: ["require"],
-      value: {'name': 'Hugo Dyonizy Steinhaus',
+      value: {'name': 'Hugo Dyonizy Steinhaus', color: '#74b9ff',
  'children': [{'name': 'Agnieszka  Plucińska',
-   'children': [{'name': 'Jacek  Wesolowski',
-     'children': [{'name': 'Konstancja  Bobecka'},
-      {'name': 'Joanna  Chachulska'},
-      {'name': 'Anna  Dembinska'},
-      {'name': 'Jan Marek Kowalski'},
-      {'name': 'Piotr  Witkowski'}]}]},
-  {'name': 'Stefan  Banach',
-   'children': [{'name': 'Stanislaw  Mazur',
-     'children': [{'name': 'Krzysztof  Maurin',
-       'children': [{'name': 'Janusz  Czyż'}, {'name': 'Jan  Rogulski'}]}]}]}]}
+   'children': [{'name': 'Jacek  Wesolowski', color: '#a29bfe',
+     'children': [{'name': 'Konstancja  Bobecka', color: '#a29bfe'},
+      {'name': 'Joanna  Chachulska', color: '#a29bfe'},
+      {'name': 'Anna  Dembinska', color: '#a29bfe'},
+      {'name': 'Jan Marek Kowalski', color: '#a29bfe'},
+      {'name': 'Piotr  Witkowski', color: '#a29bfe'}]}]},
+  {'name': 'Stefan  Banach', color: '#74b9ff',
+   'children': [{'name': 'Stanislaw  Mazur', color: '#74b9ff',
+     'children': [{'name': 'Krzysztof  Maurin',  color: '#81ecec',
+       'children': [{'name': 'Janusz  Czyż', color: '#a29bfe'}, {'name': 'Jan  Rogulski', color: '#a29bfe'}]}]}]}]}
     },
     {
       name: "dx",
